@@ -29,55 +29,55 @@
 
     <!-- Favicon -->
     <link
-      rel="icon"
+      rel="apple-touch-icon"
       sizes="57x57"
-      href="img/favicon/57x57.png"
+      href="img/favicon/apple-icon-57x57.png"
     />
     <link
-      rel="icon"
+      rel="apple-touch-icon"
       sizes="60x60"
-      href="img/favicon/60x60.png"
+      href="img/favicon/apple-icon-60x60.png"
     />
     <link
-      rel="icon"
+      rel="apple-touch-icon"
       sizes="72x72"
-      href="img/favicon/72x72.png"
+      href="img/favicon/apple-icon-72x72.png"
     />
     <link
-      rel="icon"
+      rel="apple-touch-icon"
       sizes="76x76"
-      href="img/favicon/76x76.png"
+      href="img/favicon/apple-icon-76x76.png"
     />
     <link
-      rel="icon"
+      rel="apple-touch-icon"
       sizes="114x114"
-      href="img/favicon/114x114.png"
+      href="img/favicon/apple-icon-114x114.png"
     />
     <link
-      rel="icon"
+      rel="apple-touch-icon"
       sizes="120x120"
-      href="img/favicon/120x120.png"
+      href="img/favicon/apple-icon-120x120.png"
     />
     <link
-      rel="icon"
+      rel="apple-touch-icon"
       sizes="144x144"
-      href="img/favicon/144x144.png"
+      href="img/favicon/apple-icon-144x144.png"
     />
     <link
-      rel="icon"
+      rel="apple-touch-icon"
       sizes="152x152"
-      href="img/favicon/152x152.png"
+      href="img/favicon/apple-icon-152x152.png"
     />
     <link
-      rel="icon"
+      rel="apple-touch-icon"
       sizes="180x180"
-      href="img/favicon/180x180.png"
+      href="img/favicon/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="img/favicon/192x192.png"
+      href="img/favicon/android-icon-192x192.png"
     />
     <link
       rel="icon"
@@ -101,11 +101,11 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
       name="msapplication-TileImage"
-      content="img/favicon/144x144.png"
+      content="img/favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>lup.</title>
+    <title>Lup.</title>
   </head>
 
   <body class="preloader-visible" data-barba="wrapper">
@@ -149,14 +149,14 @@
           <!-- header__bar start -->
           <div class="header__bar">
             <div class="header__logo js-header-logo">
-              <a data-barba href="home.html">
+              <a data-barba href="home-1.html">
                 <img
                   class="header__logo__light"
                   src="img/logo/lup.png"
                   alt="logo"
                 />
               </a>
-              <a data-barba href="home.html">
+              <a data-barba href="home-1.html">
                 <img
                   class="header__logo__dark"
                   src="img/logo/lup.png"
@@ -231,7 +231,7 @@
                           </a>
                         </li>
                         <li class="menu-item">
-                          <a data-barba href="servicios.html">
+                          <a data-barba href="contacto.html">
                             Contactanos
                           </a>
                         </li>
@@ -271,7 +271,7 @@
                       </div>
 
                       <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500 text-white">
+                        <h5 class="text-sm tracking-none fw-500">
                           Contacto
                         </h5>
 
@@ -293,22 +293,34 @@
         <!-- header end -->
 
         <!-- section start -->
-        <section class="layout-pt-xl layout-pb-xs">
+        <section data-anim-wrap class="layout-mt-headerBar h-md md:h-70vh">
+          <div
+            data-anim-child="img-right cover-white delay-2"
+            class="bg-fill-image"
+          >
+            <div data-parallax="0.7" class="h-full overlay-black-sm">
+              <div
+                data-parallax-target
+                class="bg-image js-lazy"
+                data-bg="img/backgrounds/10.jpg"
+              ></div>
+            </div>
+          </div>
+
           <!-- container start -->
-          <div data-anim-wrap class="container">
+          <div class="container h-full">
             <!-- row start -->
-            <div class="row">
-              <div class="col-xl-9 offset-xl-1 col-lg-11">
+            <div
+              class="row align-items-center justify-content-center text-center h-full"
+            >
+              <div class="col-xl-6 col-lg-7">
                 <div
-                  data-anim-child="slide-up delay-1"
+                  data-anim-child="slide-up delay-8"
                   class="sectionHeading -lg"
                 >
-                  <p class="sectionHeading__subtitle text-white">
-                    Contactanos
-                  </p>
-                  <h1 class="sectionHeading__title leading-sm text-white">
-                    ¿Tenes una idea para tu proyecto? Escribinos.
-                  </h1>
+                  <h2 class="sectionHeading__title text-white">
+                    Conoce a nuestro equipo, somos Lup.
+                  </h2>
                 </div>
               </div>
             </div>
@@ -319,120 +331,176 @@
         <!-- section end -->
 
         <!-- section start -->
-        <section class="layout-pt-md layout-pb-lg">
+        <section class="layout-pt-xl layout-pb-lg">
           <!-- container start -->
           <div class="container">
             <!-- row start -->
-            <div
-              data-anim="slide-up delay-3"
-              class="row justify-content-center"
-            >
-              <div class="col-xl-10">
-                <div class="sectionHeading -sm">
-                  <h2 class="sectionHeading__title text-white">
-                    ¡Charlemos!
-                  </h2>
-                  <p class="text-black leading-md mt-12 text-white">
-                    Contanos quien sos y en que estas pensando.
+            <div class="row x-gap-60 y-gap-60 layout-pt-">
+              <div class="col-lg-4 col-sm-6">
+                <div data-anim-wrap class="teamCard">
+                  <div class="teamCard__img">
+                    <div data-anim-child="img-right cover-dark-1 delay-2">
+                      <div
+                        class="bg-image ratio ratio-3:4 js-lazy"
+                        data-bg="img/team/1.jpg"
+                      ></div>
+                    </div>
+                  </div>
 
-                    <a href="#" style="font-weight: 700;"
-                      >Si queres trabajar con nosotros, es por aqui.</a
-                    >
-                  </p>
+                  <div
+                    data-anim-child="fade delay-8"
+                    class="teamCard__content mt-24"
+                  >
+                    <h4 class="teamCard__title text-xl fw-600 text-white">
+                      Ignacio Klyver
+                    </h4>
+
+                    <p class="teamCard__text capitalize mt-4 text-white">
+                      Diseñador UX & Desarrollador Web
+                    </p>
+
+                    <div class="teamCard__social mt-12 text-white">
+                      <div class="teamCard__social__item text-white">
+                        <a class="text-white" href="linkedin.com/in/ignacioklyver">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="w-1/1"></div>
+              <div class="col-lg-4 col-sm-6 text-white">
+                <div data-anim-wrap class="teamCard">
+                  <div class="teamCard__img">
+                    <div data-anim-child="img-right cover-dark-1 delay-2">
+                      <div
+                        class="bg-image ratio ratio-3:4 js-lazy"
+                        data-bg="img/team/2.jpg"
+                      ></div>
+                    </div>
+                  </div>
 
-              <div class="col-xl-10 mt-48 sm:mt-32">
-                <div class="contact-form -type-1">
-                  <form
-                    class="row x-gap-40 y-gap-32 js-ajax-form"
-                    method="POST"
-                    action="contact.php"
-                    data-message-success="Gracias! Tu mensaje ya nos llego, pronto nos estaremos contactando"
-                    data-message-error="Ups, algo salio mal, por favor escribinos directamente a <a href='hello@lup.com'>hello@lup.com</a>."
+                  <div
+                    data-anim-child="fade delay-8"
+                    class="teamCard__content mt-24"
                   >
-                  <!-- NOTA IMPORTANTE: AL DEVOLVER ERROR DE ARRIBA DE "UPS, ALGO SALIO MAL..." EL FONDO ES MUY OSCURO Y LA LETRA ES NEGRA. CAMBIAR! -->
-                    <div class="col-lg-6 text-white">
-                      <label class="js-input-group text-white">
-                        Mi nombre es
-                        <input
-                          type="text"
-                          name="name"
-                          data-required
-                          placeholder="Su turno señor Thompson"
-                          style="color: white; border-bottom-color: white;"
-                          
-                        />
-                        <span class="form__error"></span>
-                      </label>
-                    </div>
+                    <h4 class="teamCard__title text-xl fw-600 text-white">
+                      Franco Diner
+                    </h4>
 
-                    <div class="col-lg-6 text-white">
-                      <label class="js-input-group text-white">
-                        Trabajo para la compañia
-                        <input
-                          type="text"
-                          name="phone"
-                          placeholder="Umbrella corporation"
-                          style="color: white; border-bottom-color: white;"
-                        />
-                        <span class="form__error"></span>
-                      </label>
-                    </div>
+                    <p class="teamCard__text capitalize mt-4 text-white">
+                      Desarrollador Web/Mobile & Marketing Digital
+                    </p>
 
-                    <div class="col-lg-6 text-white">
-                      <label class="js-input-group text-white">
-                        Mi mail es
-                        <input
-                          type="text"
-                          name="email"
-                          data-required
-                          placeholder="thompson@umbrellacorp.com"
-                          style="color: white; border-bottom-color: white;"
-                        />
-                        <span class="form__error"></span>
-                      </label>
+                    <div class="teamCard__social mt-12">
+                      <div class="teamCard__social__item">
+                        <a class="text-white" href="#">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
                     </div>
-
-                    <div class="col-lg-6">
-                      <label class="js-input-group text-white">
-                        Mi presupuesto es aproximadamente...
-                        <input
-                          type="text"
-                          name="subject"
-                          placeholder="0$-1.000.000.000$"
-                          style="color: white; border-bottom-color: white;"
-                        />
-                        <span class="form__error"></span>
-                      </label>
-                    </div>
-
-                    <div class="col-12">
-                      <label class="js-input-group text-white">
-                        ¿En que estas pensando?
-                        <textarea
-                          name="message"
-                          rows="2"
-                          placeholder="Escribinos tu idea aqui, nosotros te contactaremos para hablar mas en profundidad."
-                          style="color: white; border-bottom-color: white;"
-                        ></textarea>
-                        <span class="form__error"></span>
-                      </label>
-                    </div>
-
-                    <div class="col-12 ajax-form-alert js-ajax-form-alert">
-                      <div class="ajax-form-alert__content"></div>
-                    </div>
-
-                    <div class="col-12 text-white">
-                      <button class="button -md -white">
-                        Enviar
-                      </button>
-                    </div>
-                  </form>
+                  </div>
                 </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-6">
+                <div data-anim-wrap class="teamCard">
+                  <div class="teamCard__img">
+                    <div data-anim-child="img-right cover-dark-1 delay-2">
+                      <div
+                        class="bg-image ratio ratio-3:4 js-lazy"
+                        data-bg="img/team/3.jpg"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div
+                    data-anim-child="fade delay-8"
+                    class="teamCard__content mt-24"
+                  >
+                    <h4 class="teamCard__title text-xl fw-600 text-white">
+                      David Roldan
+                    </h4>
+
+                    <p class="teamCard__text capitalize mt-4 text-white">
+                      Diseñador Multimedia
+                    </p>
+
+                    <div class="teamCard__social mt-12">
+                      <div class="teamCard__social__item">
+                        <a class="text-white" href="#">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-6">
+                <div data-anim-wrap class="teamCard">
+                  <div class="teamCard__img">
+                    <div data-anim-child="img-right cover-dark-1 delay-2">
+                      <div
+                        class="bg-image ratio ratio-3:4 js-lazy"
+                        data-bg="img/team/4.jpg"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div
+                    data-anim-child="fade delay-8"
+                    class="teamCard__content mt-24"
+                  >
+                    <h4 class="teamCard__title text-xl fw-600 text-white">
+                      Guido Zunino
+                    </h4>
+
+                    <p class="teamCard__text capitalize mt-4 text-white">
+                      Marketing & Marketing Digital
+                    </p>
+
+                    <div class="teamCard__social mt-12">
+                      <div class="teamCard__social__item">
+                        <a class="text-white" href="#">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- row end -->
+          </div>
+          <!-- container end -->
+        </section>
+        <!-- section end -->
+
+        <!-- section start -->
+        <section class="layout-pt-lg layout-pb-lg bg-dark-1">
+          <!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-8">
+                <p class="text-base text-light">
+                  Get to know our process a little better.
+                </p>
+
+                <h2
+                  class="text-6xl sm:text-5xl xs:text-4xl fw-700 mt-20 text-white"
+                >
+                  Do you have a digital project to boost?
+                </h2>
+
+                <a
+                  href="#"
+                  class="button -md -outline-white text-white mt-40 md:mt-32"
+                >
+                  get in touch
+                </a>
               </div>
             </div>
             <!-- row end -->
@@ -475,7 +543,7 @@
                           <div class="footer__content text-base text-light mt-16 sm:mt-12">
                               <div><a data-barba href="servicios.html" class="button -underline mt-4">Servicios</a></div>
                               <div><a data-barba href="about-1.html" class="button -underline mt-4">Quienes somos</a></div>
-                              <div><a data-barba href="contact-1.html" class="button -underline mt-4">Contactanos</a></div>
+                              <div><a data-barba href="contacto.html" class="button -underline mt-4">Contactanos</a></div>
                           </div>
                       </div>
 

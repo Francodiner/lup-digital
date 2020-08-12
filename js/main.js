@@ -2114,7 +2114,7 @@ function contactForm() {
         field.classList.add('-error');
         validForm = false;
         errorField.classList.add('is-active');
-        errorField.innerHTML = 'Please fill this field';
+        errorField.innerHTML = 'Por favor completa el campo correctamente!';
         continue;
       }
     
@@ -2123,7 +2123,7 @@ function contactForm() {
           field.classList.add('-error');
           validForm = false;
           errorField.classList.add('is-active');
-          errorField.innerHTML = 'Please enter correct email';
+          errorField.innerHTML = 'Por favor, ingresa un mail valido!';
           continue;
         }
       }

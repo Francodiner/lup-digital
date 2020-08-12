@@ -341,7 +341,7 @@
                     ¡Charlemos!
                   </h2>
                   <p class="text-black leading-md mt-12 text-white">
-                    Contanos quien sos y que estas pensando.
+                    Contanos quien sos y en que estas pensando.
 
                     <a href="#" style="font-weight: 700;"
                       >Si queres trabajar con nosotros, es por aqui.</a
@@ -358,9 +358,10 @@
                     class="row x-gap-40 y-gap-32 js-ajax-form"
                     method="POST"
                     action="contact.php"
-                    data-message-success="Your message has been sent! We will reply you as soon as possible."
-                    data-message-error="Something went wrong. Please contact us directly at <a href='hello@lup.com'>hello@lup.com</a>."
+                    data-message-success="Gracias! Tu mensaje ya nos llego, pronto nos estaremos contactando"
+                    data-message-error="Ups, algo salio mal, por favor escribinos directamente a <a href='hello@lup.com'>hello@lup.com</a>."
                   >
+                  <!-- NOTA IMPORTANTE: AL DEVOLVER ERROR DE ARRIBA DE "UPS, ALGO SALIO MAL..." EL FONDO ES MUY OSCURO Y LA LETRA ES NEGRA. CAMBIAR! -->
                     <div class="col-lg-6 text-white">
                       <label class="js-input-group text-white">
                         Mi nombre es
@@ -369,7 +370,8 @@
                           name="name"
                           data-required
                           placeholder="Su turno señor Thompson"
-                          style="color: white;"
+                          style="color: white; border-bottom-color: white;"
+                          
                         />
                         <span class="form__error"></span>
                       </label>
@@ -382,7 +384,7 @@
                           type="text"
                           name="phone"
                           placeholder="Umbrella corporation"
-                          style="color: white;"
+                          style="color: white; border-bottom-color: white;"
                         />
                         <span class="form__error"></span>
                       </label>
@@ -396,7 +398,7 @@
                           name="email"
                           data-required
                           placeholder="thompson@umbrellacorp.com"
-                          style="color: white;"
+                          style="color: white; border-bottom-color: white;"
                         />
                         <span class="form__error"></span>
                       </label>
@@ -409,7 +411,7 @@
                           type="text"
                           name="subject"
                           placeholder="0$-1.000.000.000$"
-                          style="color: white;"
+                          style="color: white; border-bottom-color: white;"
                         />
                         <span class="form__error"></span>
                       </label>
@@ -422,7 +424,7 @@
                           name="message"
                           rows="2"
                           placeholder="Escribinos tu idea aqui, nosotros te contactaremos para hablar mas en profundidad."
-                          style="color: white;"
+                          style="color: white; border-bottom-color: white;"
                         ></textarea>
                         <span class="form__error"></span>
                       </label>

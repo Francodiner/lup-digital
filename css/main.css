@@ -853,7 +853,7 @@ button {
   font-size: 0.875rem;
   line-height: 1;
   font-weight: 500;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   letter-spacing: 0.03em;
 }
 
@@ -863,7 +863,7 @@ button {
   font-size: 0.9375rem;
   line-height: 1;
   font-weight: 500;
-  text-transform: capitalize;
+  /*  text-transform: capitalize; */
   letter-spacing: 0.03em;
 }
 
@@ -880,7 +880,7 @@ button {
   font-size: 1rem;
   line-height: 1;
   font-weight: 500;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   letter-spacing: 0.03em;
 }
 

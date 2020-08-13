@@ -1,533 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/vendors.css" />
-    <link rel="stylesheet" href="css/main.css" />
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      sizes="57x57"
-      href="img/favicon/57x57.png"
-    />
-    <link
-      rel="icon"
-      sizes="60x60"
-      href="img/favicon/60x60.png"
-    />
-    <link
-      rel="icon"
-      sizes="72x72"
-      href="img/favicon/72x72.png"
-    />
-    <link
-      rel="icon"
-      sizes="76x76"
-      href="img/favicon/76x76.png"
-    />
-    <link
-      rel="icon"
-      sizes="114x114"
-      href="img/favicon/114x114.png"
-    />
-    <link
-      rel="icon"
-      sizes="120x120"
-      href="img/favicon/120x120.png"
-    />
-    <link
-      rel="icon"
-      sizes="144x144"
-      href="img/favicon/144x144.png"
-    />
-    <link
-      rel="icon"
-      sizes="152x152"
-      href="img/favicon/152x152.png"
-    />
-    <link
-      rel="icon"
-      sizes="180x180"
-      href="img/favicon/180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="img/favicon/192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="img/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="img/favicon/144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css" />
+  <link rel="stylesheet" href="css/main.css" />
 
-    <title>lup.</title>
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" sizes="57x57" href="img/favicon/57x57.png" />
+  <link rel="icon" sizes="60x60" href="img/favicon/60x60.png" />
+  <link rel="icon" sizes="72x72" href="img/favicon/72x72.png" />
+  <link rel="icon" sizes="76x76" href="img/favicon/76x76.png" />
+  <link rel="icon" sizes="114x114" href="img/favicon/114x114.png" />
+  <link rel="icon" sizes="120x120" href="img/favicon/120x120.png" />
+  <link rel="icon" sizes="144x144" href="img/favicon/144x144.png" />
+  <link rel="icon" sizes="152x152" href="img/favicon/152x152.png" />
+  <link rel="icon" sizes="180x180" href="img/favicon/180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="img/favicon/144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
-  <body class="preloader-visible" data-barba="wrapper">
-    <!-- preloader start -->
-    <div class="preloader js-preloader">
-      <div class="preloader__bg"></div>
+  <title>Lup.</title>
+</head>
 
-      <div class="preloader__progress">
-        <div class="preloader__progress__inner"></div>
+<body class="preloader-visible" data-barba="wrapper">
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+
+    <div class="preloader__progress">
+      <div class="preloader__progress__inner"></div>
+    </div>
+  </div>
+  <!-- preloader end -->
+
+  <!-- cursor start -->
+  <div class="cursor js-cursor">
+    <div class="cursor__wrapper">
+      <div class="cursor__follower js-follower"></div>
+      <div class="cursor__label js-label"></div>
+      <div class="cursor__icon js-icon"></div>
+    </div>
+  </div>
+  <!-- cursor end -->
+
+  <!-- barba container start -->
+  <div class="barba-container" data-barba="container">
+    <!-- to-top-button start -->
+    <div data-cursor class="backButton js-backButton">
+      <span class="backButton__bg"></span>
+      <div class="backButton__icon__wrap">
+        <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
       </div>
     </div>
-    <!-- preloader end -->
+    <!-- to-top-button end -->
 
-    <!-- cursor start -->
-    <div class="cursor js-cursor">
-      <div class="cursor__wrapper">
-        <div class="cursor__follower js-follower"></div>
-        <div class="cursor__label js-label"></div>
-        <div class="cursor__icon js-icon"></div>
-      </div>
-    </div>
-    <!-- cursor end -->
+    <main class="bg-dark-1">
+      <!-- header start -->
+      <header class="header -dark -sticky-dark js-header-dark js-header">
+        <!-- header__bar start -->
+        <div class="header__bar">
+          <div class="header__logo js-header-logo">
+            <a data-barba href="home.html">
+              <img class="header__logo__light" src="img/logo/lup.png" alt="logo" />
+            </a>
+            <a data-barba href="home.html">
+              <img class="header__logo__dark" src="img/logo/lup.png" alt="logo" />
+            </a>
+          </div>
 
-    <!-- barba container start -->
-    <div class="barba-container" data-barba="container">
-      <!-- to-top-button start -->
-      <div data-cursor class="backButton js-backButton">
-        <span class="backButton__bg"></span>
-        <div class="backButton__icon__wrap">
-          <i
-            class="backButton__button js-top-button"
-            data-feather="arrow-up"
-          ></i>
+          <div class="header__menu js-header-menu">
+            <button type="button" class="nav-button-open js-nav-open">
+              <i class="icon" data-feather="menu"></i>
+            </button>
+          </div>
         </div>
-      </div>
-      <!-- to-top-button end -->
+        <!-- header__bar end -->
 
-      <main class="bg-dark-1">
-        <!-- header start -->
-        <header class="header -dark -sticky-dark js-header">
-          <!-- header__bar start -->
-          <div class="header__bar">
-            <div class="header__logo js-header-logo">
-              <a data-barba href="home.html">
-                <img
-                  class="header__logo__light"
-                  src="img/logo/lup.png"
-                  alt="logo"
-                />
-              </a>
-              <a data-barba href="home.html">
-                <img
-                  class="header__logo__dark"
-                  src="img/logo/lup.png"
-                  alt="logo"
-                />
-              </a>
-            </div>
+        <!-- nav start -->
+        <nav class="nav js-nav">
+          <div class="nav__inner js-nav-inner">
+            <div class="nav__bg js-nav-bg"></div>
 
-            <div class="header__menu js-header-menu">
-              <button type="button" class="nav-button-open js-nav-open">
-                <i class="icon" data-feather="menu"></i>
-              </button>
-            </div>
-          </div>
-          <!-- header__bar end -->
+            <div class="nav__container">
+              <div class="nav__header">
+                <button type="button" class="nav-button-back js-nav-back">
+                  <i class="icon" data-feather="arrow-left-circle"></i>
+                </button>
 
-          <!-- nav start -->
-          <nav class="nav js-nav">
-            <div class="nav__inner js-nav-inner">
-              <div class="nav__bg js-nav-bg"></div>
+                <button type="button" class="nav-btn-close js-nav-close pointer-events-none">
+                  <i class="icon" data-feather="x"></i>
+                </button>
+              </div>
 
-              <div class="nav__container">
-                <div class="nav__header">
-                  <button type="button" class="nav-button-back js-nav-back">
-                    <i class="icon" data-feather="arrow-left-circle"></i>
-                  </button>
+              <div class="nav__content">
+                <div class="nav__content__left">
+                  <div class="navList__wrap">
+                    <ul class="navList js-navList">
+                      <li>
+                        <a data-barba href="home.html">
+                          Home
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a data-barba href="servicios.html">
+                          Servicios
+                        </a>
+                      </li>
 
-                  <button
-                    type="button"
-                    class="nav-btn-close js-nav-close pointer-events-none"
-                  >
-                    <i class="icon" data-feather="x"></i>
-                  </button>
-                </div>
+                      <li class="menu-item-has-children">
+                        <a>Portfolio</a>
 
-                <div class="nav__content">
-                  <div class="nav__content__left">
-                    <div class="navList__wrap">
-                      <ul class="navList js-navList">
-                        <li>
-                          <a data-barba href="home.html">
-                            Home
-                          </a>
-                        </li>
-                        <li class="menu-item">
-                          <a data-barba href="servicios.html">
-                            Servicios
-                          </a>
-                        </li>
-
-                        <li class="menu-item-has-children">
-                          <a>Portfolio</a>
-
-                          <ul class="subnav-list">
-                            <li>
-                                <a data-barba href="PortfolioDesarrollo.html">Desarrollo web</a>
-                            </li>
-                            <li>
-                                <a data-barba href="PortfolioMarketing.html">Marketing</a>
-                            </li>
-                            <li>
-                                <a data-barba href="PortfolioUX.html">Experiencias de usuario</a>
-                            </li>
-                            <li>
-                                <a data-barba href="PortfolioDiseno.html">Diseno & Multimedia</a>
-                            </li>
+                        <ul class="subnav-list">
+                          <li>
+                            <a data-barba href="PortfolioDesarrollo.html">Desarrollo web</a>
+                          </li>
+                          <li>
+                            <a data-barba href="PortfolioMarketing.html">Marketing</a>
+                          </li>
+                          <li>
+                            <a data-barba href="PortfolioUX.html">Experiencias de usuario</a>
+                          </li>
+                          <li>
+                            <a data-barba href="PortfolioDiseno.html">Diseno & Multimedia</a>
+                          </li>
                         </ul>
-                        </li>
-                        <li class="menu-item">
-                          <a data-barba href="equipo.html">
-                            Sobre nosotros
-                          </a>
-                        </li>
-                        <li class="menu-item">
-                          <a data-barba href="servicios.html">
-                            Contactanos
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                      </li>
+                      <li class="menu-item">
+                        <a data-barba href="equipo.html">
+                          Sobre nosotros
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a data-barba href="servicios.html">
+                          Contactanos
+                        </a>
+                      </li>
+                    </ul>
                   </div>
+                </div>
 
-                  <div class="nav__content__right">
-                    <div class="nav__info">
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500">
-                          Direccion
-                        </h5>
+                <div class="nav__content__right">
+                  <div class="nav__info">
 
-                        <div
-                          class="nav__info__content text-lg text-white mt-16"
-                        >
-                          <p>
-                            Lup. Studio 1000 Gateway Road, Buenos Aires
-                          </p>
-                        </div>
+                    <div class="nav__info__item js-navInfo-item">
+                      <h5 class="text-sm tracking-none fw-500">
+                        Nuestras redes
+                      </h5>
+
+                      <div class="nav__info__content text-lg text-white mt-16">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Behance</a>
+                        <a href="#">Linkedin</a>
                       </div>
+                    </div>
 
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500">
-                          Nuestras redes
-                        </h5>
+                    <div class="nav__info__item js-navInfo-item">
+                      <h5 class="text-sm tracking-none fw-500">
+                        Contacto
+                      </h5>
 
-                        <div
-                          class="nav__info__content text-lg text-white mt-16"
-                        >
-                          <a href="#">Instagram</a>
-                          <a href="#">Facebook</a>
-                          <a href="#">Behance</a>
-                          <a href="#">Linkedin</a>
-                        </div>
-                      </div>
-
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500 text-white">
-                          Contacto
-                        </h5>
-
-                        <div
-                          class="nav__info__content text-lg text-white mt-16"
-                        >
-                          <a href="#">hello@lup.com</a>
-                          <a href="#">+54 11 1111-1111</a>
-                        </div>
+                      <div class="nav__info__content text-lg text-white mt-16">
+                        <a href="#">hello@lup.com</a>
+                        <a href="#">+54 11 1111-1111</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </nav>
-          <!-- nav end -->
-        </header>
-        <!-- header end -->
-
-        <!-- section start -->
-        <section class="layout-pt-xl layout-pb-xs">
-          <!-- container start -->
-          <div data-anim-wrap class="container">
-            <!-- row start -->
-            <div class="row">
-              <div class="col-xl-9 offset-xl-1 col-lg-11">
-                <div
-                  data-anim-child="slide-up delay-1"
-                  class="sectionHeading -lg"
-                >
-                  <p class="sectionHeading__subtitle text-white">
-                    Contactanos
-                  </p>
-                  <h1 class="sectionHeading__title leading-sm text-white">
-                    ¿Tenes una idea para tu proyecto? Escribinos.
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <!-- row end -->
           </div>
-          <!-- container end -->
-        </section>
-        <!-- section end -->
+        </nav>
+        <!-- nav end -->
+      </header>
+      <!-- header end -->
 
-        <!-- section start -->
-        <section class="layout-pt-md layout-pb-lg">
-          <!-- container start -->
-          <div class="container">
-            <!-- row start -->
-            <div
-              data-anim="slide-up delay-3"
-              class="row justify-content-center"
-            >
-              <div class="col-xl-10">
-                <div class="sectionHeading -sm">
-                  <h2 class="sectionHeading__title text-white">
-                    ¡Charlemos!
-                  </h2>
-                  <p class="text-black leading-md mt-12 text-white">
-                    Contanos quien sos y en que estas pensando.
-
-                    <a href="#" style="font-weight: 700;"
-                      >Si queres trabajar con nosotros, es por aqui.</a
-                    >
-                  </p>
-                </div>
+      <!-- section start -->
+      <section class="layout-pt-xl layout-pb-xs">
+        <!-- container start -->
+        <div data-anim-wrap class="container">
+          <!-- row start -->
+          <div class="row">
+            <div class="col-xl-9 offset-xl-1 col-lg-11">
+              <div data-anim-child="slide-up delay-1" class="sectionHeading -lg">
+                <p class="sectionHeading__subtitle text-white">
+                  Contactanos
+                </p>
+                <h1 class="sectionHeading__title leading-sm text-white">
+                  ¿Tenes una idea para tu proyecto? Escribinos.
+                </h1>
               </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- section end -->
 
-              <div class="w-1/1"></div>
+      <!-- section start -->
+      <section class="layout-pt-md layout-pb-lg">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div data-anim="slide-up delay-3" class="row justify-content-center">
+            <div class="col-xl-10">
+              <div class="sectionHeading -sm">
+                <h2 class="sectionHeading__title text-white">
+                  ¡Charlemos!
+                </h2>
+                <p class="text-black leading-md mt-12 text-white">
+                  Contanos quien sos y en que estas pensando.
 
-              <div class="col-xl-10 mt-48 sm:mt-32">
-                <div class="contact-form -type-1">
-                  <form
-                    class="row x-gap-40 y-gap-32 js-ajax-form"
-                    method="POST"
-                    action="contact.php"
-                    data-message-success="Gracias! Tu mensaje ya nos llego, pronto nos estaremos contactando"
-                    data-message-error="Ups, algo salio mal, por favor escribinos directamente a <a href='hello@lup.com'>hello@lup.com</a>."
-                  >
+                  <a href="#" style="font-weight: 700;">Si queres trabajar con nosotros, es por aqui.</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="w-1/1"></div>
+
+            <div class="col-xl-10 mt-48 sm:mt-32">
+              <div class="contact-form -type-1">
+                <form class="row x-gap-40 y-gap-32 js-ajax-form" method="POST" action="contact.php"
+                  data-message-success="Gracias! Tu mensaje ya nos llego, pronto nos estaremos contactando"
+                  data-message-error="Ups, algo salio mal, por favor escribinos directamente a <a href='hello@lup.com'>hello@lup.com</a>.">
                   <!-- NOTA IMPORTANTE: AL DEVOLVER ERROR DE ARRIBA DE "UPS, ALGO SALIO MAL..." EL FONDO ES MUY OSCURO Y LA LETRA ES NEGRA. CAMBIAR! -->
-                    <div class="col-lg-6 text-white">
-                      <label class="js-input-group text-white">
-                        Mi nombre es
-                        <input
-                          type="text"
-                          name="name"
-                          data-required
-                          placeholder="Su turno señor Thompson"
-                          style="color: white; border-bottom-color: white;"
-                          
-                        />
-                        <span class="form__error"></span>
-                      </label>
-                    </div>
+                  <div class="col-lg-6 text-white">
+                    <label class="js-input-group text-white">
+                      Mi nombre es
+                      <input type="text" name="name" data-required placeholder="Su turno señor Thompson"
+                        style="color: white; border-bottom-color: white;" />
+                      <span class="form__error"></span>
+                    </label>
+                  </div>
 
-                    <div class="col-lg-6 text-white">
-                      <label class="js-input-group text-white">
-                        Trabajo para la compañia
-                        <input
-                          type="text"
-                          name="phone"
-                          placeholder="Umbrella corporation"
-                          style="color: white; border-bottom-color: white;"
-                        />
-                        <span class="form__error"></span>
-                      </label>
-                    </div>
+                  <div class="col-lg-6 text-white">
+                    <label class="js-input-group text-white">
+                      Trabajo para la compañia
+                      <input type="text" name="phone" placeholder="Umbrella corporation"
+                        style="color: white; border-bottom-color: white;" />
+                      <span class="form__error"></span>
+                    </label>
+                  </div>
 
-                    <div class="col-lg-6 text-white">
-                      <label class="js-input-group text-white">
-                        Mi mail es
-                        <input
-                          type="text"
-                          name="email"
-                          data-required
-                          placeholder="thompson@umbrellacorp.com"
-                          style="color: white; border-bottom-color: white;"
-                        />
-                        <span class="form__error"></span>
-                      </label>
-                    </div>
+                  <div class="col-lg-6 text-white">
+                    <label class="js-input-group text-white">
+                      Mi mail es
+                      <input type="text" name="email" data-required placeholder="thompson@umbrellacorp.com"
+                        style="color: white; border-bottom-color: white;" />
+                      <span class="form__error"></span>
+                    </label>
+                  </div>
 
-                    <div class="col-lg-6">
-                      <label class="js-input-group text-white">
-                        Mi presupuesto es aproximadamente...
-                        <input
-                          type="text"
-                          name="subject"
-                          placeholder="0$-1.000.000.000$"
-                          style="color: white; border-bottom-color: white;"
-                        />
-                        <span class="form__error"></span>
-                      </label>
-                    </div>
+                  <div class="col-lg-6">
+                    <label class="js-input-group text-white">
+                      Mi presupuesto es aproximadamente...
+                      <input type="text" name="subject" placeholder="0$-1.000.000.000$"
+                        style="color: white; border-bottom-color: white;" />
+                      <span class="form__error"></span>
+                    </label>
+                  </div>
 
-                    <div class="col-12">
-                      <label class="js-input-group text-white">
-                        ¿En que estas pensando?
-                        <textarea
-                          name="message"
-                          rows="2"
-                          placeholder="Escribinos tu idea aqui, nosotros te contactaremos para hablar mas en profundidad."
-                          style="color: white; border-bottom-color: white;"
-                        ></textarea>
-                        <span class="form__error"></span>
-                      </label>
-                    </div>
+                  <div class="col-12">
+                    <label class="js-input-group text-white">
+                      ¿En que estas pensando?
+                      <textarea name="message" rows="2"
+                        placeholder="Escribinos tu idea aqui, nosotros te contactaremos para hablar mas en profundidad."
+                        style="color: white; border-bottom-color: white;"></textarea>
+                      <span class="form__error"></span>
+                    </label>
+                  </div>
 
-                    <div class="col-12 ajax-form-alert js-ajax-form-alert">
-                      <div class="ajax-form-alert__content"></div>
-                    </div>
+                  <div class="col-12 ajax-form-alert js-ajax-form-alert">
+                    <div class="ajax-form-alert__content"></div>
+                  </div>
 
-                    <div class="col-12 text-white">
-                      <button class="button -md -white">
-                        Enviar
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                  <div class="col-12 text-white">
+                    <button class="button -md -white">
+                      Enviar
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
-            <!-- row end -->
           </div>
-          <!-- container end -->
-        </section>
-        <!-- section end -->
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- section end -->
 
-        <!-- footer start -->
-        <footer class="footer -type-1 bg-dark-1">
-          <!-- container start -->
-          <div class="container">
+      <!-- footer start -->
+      <footer class="footer -type-1 bg-dark-1">
+        <!-- container start -->
+        <div class="container">
 
-              <div class="footer__top">
-                  <!-- row start -->
-                  <div class="row y-gap-48 justify-content-between">
-                      <div class="col-lg-auto col-sm-12">
-                          <a href="home.html" class="footer__logo text-white">
-            Lup.
-          </a>
-                      </div>
-
-                      <div class="col-lg-3 col-sm-6">
-                          <h4 class="text-xl fw-500 text-white">
-                              Studio
-                          </h4>
-
-                          <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                              <p>Lup. Studio 1000 Gateway Road, Buenos Aires</p>
-                              <p class="mt-8">hello@lup.com</p>
-                              <p class="mt-8">+54 11 1111-1111</p>
-                          </div>
-                      </div>
-
-                      <div class="col-lg-auto col-sm-4">
-                          <h4 class="text-xl fw-500 text-white">
-                              Links
-                          </h4>
-
-                          <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                              <div><a data-barba href="servicios.html" class="button -underline mt-4">Servicios</a></div>
-                              <div><a data-barba href="about-1.html" class="button -underline mt-4">Quienes somos</a></div>
-                              <div><a data-barba href="contact-1.html" class="button -underline mt-4">Contactanos</a></div>
-                          </div>
-                      </div>
-
-                      <div class="col-lg-auto col-auto">
-                          <h4 class="text-xl fw-500 text-white">
-                              Encontranos en las redes
-                          </h4>
-
-                              </a>
-                              <a class="social__item text-white border-light" href="#">
-                                  <i class="fab fa-instagram"></i>
-                              </a>
-                              <a class="social__item text-white border-light" href="#">
-                                  <i class="fab fa-facebook"></i>
-                              </a>
-                              <a class="social__item text-white border-light" href="#">
-                                  <i class="fab fa-behance"></i>
-                              </a>
-                              <a class="social__item text-white border-light" href="#">
-                                  <i class="fab fa-linkedin-in"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- row end -->
+          <div class="footer__top">
+            <!-- row start -->
+            <div class="row y-gap-48 justify-content-between">
+              <div class="col-lg-auto col-sm-12">
+                <a href="home.html" class="footer__logo text-white">
+                  Lup.
+                </a>
               </div>
 
+              <div class="col-lg-3 col-sm-6">
+                <h4 class="text-xl fw-500 text-white">
+                  Studio
+                </h4>
 
-              <div class="footer__bottom -light">
-                  <!-- row start -->
-                  <div class="row">
-                      <div class="col">
-                          <div class="footer__copyright">
-                              <p class="text-light">
-                                  @ 2020, Lup Digital.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- row end -->
+                <div class="footer__content text-base text-light mt-16 sm:mt-12">
+                  <p>Lup. Studio 1000 Gateway Road, Buenos Aires</p>
+                  <p class="mt-8">hello@lup.com</p>
+                  <p class="mt-8">+54 11 1111-1111</p>
+                </div>
               </div>
 
-          </div>
-          <!-- container end -->
-      </footer>
-      <!-- footer end -->
-      </main>
-    </div>
-    <!-- barba container end -->
+              <div class="col-lg-auto col-sm-4">
+                <h4 class="text-xl fw-500 text-white">
+                  Links
+                </h4>
 
-    <!-- JavaScript -->
-    <script src="js/vendors.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+                <div class="footer__content text-base text-light mt-16 sm:mt-12">
+                  <div><a data-barba href="servicios.html" class="button -underline mt-4">Servicios</a></div>
+                  <div><a data-barba href="about-1.html" class="button -underline mt-4">Quienes somos</a></div>
+                  <div><a data-barba href="contact-1.html" class="button -underline mt-4">Contactanos</a></div>
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-auto">
+                <h4 class="text-xl fw-500 text-white">
+                  Encontranos en las redes
+                </h4>
+
+                </a>
+                <a class="social__item text-white border-light" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social__item text-white border-light" href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a class="social__item text-white border-light" href="#">
+                  <i class="fab fa-behance"></i>
+                </a>
+                <a class="social__item text-white border-light" href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+
+
+        <div class="footer__bottom -light">
+          <!-- row start -->
+          <div class="row">
+            <div class="col">
+              <div class="footer__copyright">
+                <p class="text-light">
+                  @ 2020, Lup Digital.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+
+  </div>
+  <!-- container end -->
+  </footer>
+  <!-- footer end -->
+  </main>
+  </div>
+  <!-- barba container end -->
+
+  <!-- JavaScript -->
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
